@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C8EED9316ADBB9D00CDA41D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8EED9216ADBB9D00CDA41D /* Default-568h@2x.png */; };
 		5A1F607215571A10004B96F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1F607115571A10004B96F6 /* UIKit.framework */; };
 		5A1F607415571A10004B96F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1F607315571A10004B96F6 /* Foundation.framework */; };
 		5A1F607615571A10004B96F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1F607515571A10004B96F6 /* CoreGraphics.framework */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C8EED9216ADBB9D00CDA41D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5A1F606D15571A10004B96F6 /* Mitternachtsformel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mitternachtsformel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1F607115571A10004B96F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5A1F607315571A10004B96F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,6 +54,7 @@
 		5A1F606215571A10004B96F6 = {
 			isa = PBXGroup;
 			children = (
+				2C8EED9216ADBB9D00CDA41D /* Default-568h@2x.png */,
 				5A1F607715571A10004B96F6 /* Mitternachtsformel */,
 				5A1F607015571A10004B96F6 /* Frameworks */,
 				5A1F606E15571A10004B96F6 /* Products */,
@@ -155,6 +158,7 @@
 				5A1F607C15571A10004B96F6 /* InfoPlist.strings in Resources */,
 				5A1F608515571A10004B96F6 /* MainStoryboard.storyboard in Resources */,
 				5A1F609615571C5B004B96F6 /* 5b2af7493f57bb0ff40d0113763aa427.png in Resources */,
+				2C8EED9316ADBB9D00CDA41D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,12 +30,12 @@
     double c = [self.fieldC.text doubleValue];
     double res1;
     double res2;
-    res1 = (-1*b+sqrt(b*b-4*a*c))/(2*a);
-    res2 = (-1*b-sqrt(b*b-4*a*c))/(2*a);
     if (b*b-4*a*c < 0) {
         self.labelRes1.text = @"unreal Result";
         self.labelRes2.text = @"unreal Result";
-    } else {   
+    } else {
+        res1 = (-1*b+sqrt(b*b-4*a*c))/(2*a);
+        res2 = (-1*b-sqrt(b*b-4*a*c))/(2*a);
         self.labelRes1.text = [NSString stringWithFormat:@"%g", res1];
         self.labelRes2.text = [NSString stringWithFormat:@"%g", res2];
     }
