@@ -83,8 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				5A1F609515571C5B004B96F6 /* 5b2af7493f57bb0ff40d0113763aa427.png */,
-				5A1F608015571A10004B96F6 /* MitternachtsformelAppDelegate.h */,
-				5A1F608115571A10004B96F6 /* MitternachtsformelAppDelegate.m */,
 				5A1F608315571A10004B96F6 /* MainStoryboard.storyboard */,
 				5A1F608615571A10004B96F6 /* MitternachtsformelViewController.h */,
 				5A1F608715571A10004B96F6 /* MitternachtsformelViewController.m */,
@@ -96,6 +94,8 @@
 		5A1F607815571A10004B96F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5A1F608015571A10004B96F6 /* MitternachtsformelAppDelegate.h */,
+				5A1F608115571A10004B96F6 /* MitternachtsformelAppDelegate.m */,
 				5A1F607915571A10004B96F6 /* Mitternachtsformel-Info.plist */,
 				5A1F607A15571A10004B96F6 /* InfoPlist.strings */,
 				5A1F607D15571A10004B96F6 /* main.m */,
