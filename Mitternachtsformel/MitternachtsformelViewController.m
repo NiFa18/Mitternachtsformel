@@ -15,14 +15,6 @@
 
 @implementation MitternachtsformelViewController
 
-@synthesize fieldA = _fieldA;
-@synthesize fieldB = _fieldB;
-@synthesize fieldC = _fieldC;
-@synthesize labelRes1 = _labelRes1;
-@synthesize labelRes2 = _labelRes2;
-
-
-
 - (IBAction)solve
 {
     double a = [self.fieldA.text doubleValue];
