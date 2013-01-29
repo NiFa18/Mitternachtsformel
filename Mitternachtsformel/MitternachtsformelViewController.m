@@ -19,12 +19,18 @@
 {
     sender.selected = !sender.isSelected;
     
-    if (!sender.isSelected) {        
+    self.fieldA.enabled = !self.fieldA.isEnabled;
+    self.fieldB.enabled = !self.fieldB.isEnabled;
+    self.fieldC.enabled = !self.fieldC.isEnabled;
+    
+
+    if (!sender.isSelected) {
         self.labelRes1.text = [NSString stringWithFormat:@""];
         self.labelRes2.text = [NSString stringWithFormat:@""];
         self.fieldA.text = [NSString stringWithFormat:@""];
         self.fieldB.text = [NSString stringWithFormat:@""];
         self.fieldC.text = [NSString stringWithFormat:@""];
+        
     } else {
         double a = [self.fieldA.text doubleValue];
         double b = [self.fieldB.text doubleValue];
