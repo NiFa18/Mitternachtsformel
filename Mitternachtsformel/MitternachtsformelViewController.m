@@ -15,22 +15,34 @@
 
 @implementation MitternachtsformelViewController
 
-- (IBAction)solve
+- (IBAction)solveClear:(UIButton *)sender
 {
-    double a = [self.fieldA.text doubleValue];
-    double b = [self.fieldB.text doubleValue];
-    double c = [self.fieldC.text doubleValue];
-    double res1;
-    double res2;
-    if (b*b-4*a*c < 0) {
-        self.labelRes1.text = @"unreal Result";
-        self.labelRes2.text = @"unreal Result";
+    sender.selected = !sender.isSelected;
+    
+    if (!sender.isSelected) {        
+        self.labelRes1.text = [NSString stringWithFormat:@""];
+        self.labelRes2.text = [NSString stringWithFormat:@""];
+        self.fieldA.text = [NSString stringWithFormat:@""];
+        self.fieldB.text = [NSString stringWithFormat:@""];
+        self.fieldC.text = [NSString stringWithFormat:@""];
     } else {
-        res1 = (-1*b+sqrt(b*b-4*a*c))/(2*a);
-        res2 = (-1*b-sqrt(b*b-4*a*c))/(2*a);
-        self.labelRes1.text = [NSString stringWithFormat:@"%g", res1];
-        self.labelRes2.text = [NSString stringWithFormat:@"%g", res2];
+        double a = [self.fieldA.text doubleValue];
+        double b = [self.fieldB.text doubleValue];
+        double c = [self.fieldC.text doubleValue];
+        double res1;
+        double res2;
+        if (b*b-4*a*c < 0) {
+            res1 = sqrt(fabs(b*b-4*a*c))/(2*a);     //imaginary result (+-)
+            res2 = (-1*b)/(2*a);                 //real result
+            self.labelRes1.text = [NSString stringWithFormat:@"%g + j %g",res2, res1];
+            self.labelRes2.text = [NSString stringWithFormat:@"%g - j %g",res2, res1];
+        } else {
+            res1 = (-1*b+sqrt(b*b-4*a*c))/(2*a);
+            res2 = (-1*b-sqrt(b*b-4*a*c))/(2*a);
+            self.labelRes1.text = [NSString stringWithFormat:@"%g", res1];
+            self.labelRes2.text = [NSString stringWithFormat:@"%g", res2];
+        }
+
     }
 }
-
 @end

@@ -16,6 +16,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelRes1;
 @property (weak, nonatomic) IBOutlet UILabel *labelRes2;
 
-- (IBAction)solve;
 
 @end
